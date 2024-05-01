@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { CirclePlay } from "lucide-react";
+import { ArrowRight, CirclePlay, Link } from "lucide-react";
 
 export default function HeroSection() {
   const headlineUUI = "Beautiful analytics to grow smarter";
@@ -12,9 +12,15 @@ export default function HeroSection() {
   return (
     <>
       <div className="flex flex-col px-4 py-16">
-        <Button className="mb-4" variant="link">
-          <img src="./src/assets/newFeature.svg" alt="new feature button" />
-        </Button>
+        <div className="mb-4 inline-flex items-center justify-center text-xs font-medium text-primary transition-transform hover:translate-x-2 hover:cursor-pointer">
+          <div className="flex items-center gap-3 rounded-full bg-primary/5 p-1">
+            <div className="rounded-full border border-primary/20 bg-white px-2 py-1">
+              <h4>New feature</h4>
+            </div>
+            <h4>Check our the team dashboard</h4>
+            <ArrowRight className="text-primary/50" />
+          </div>
+        </div>
 
         <h1 className="mb-4 text-center text-4xl font-semibold leading-10">
           {headlineUUI}
