@@ -10,7 +10,7 @@ export default function SocialProofSection() {
 
   return (
     <>
-      <div className="border px-4 pb-16">
+      <div className="px-4 pb-16">
         <h3 className="mb-8 text-center font-medium leading-6 text-gray-600">
           Join 4,000+ companies already growing
         </h3>
