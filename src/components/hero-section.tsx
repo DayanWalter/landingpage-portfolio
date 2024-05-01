@@ -11,7 +11,7 @@ export default function HeroSection() {
 
   return (
     <>
-      <div className="px-4 py-16">
+      <div className="flex flex-col px-4 py-16">
         <Button className="mb-4" variant="link">
           <img src="./src/assets/newFeature.svg" alt="new feature button" />
         </Button>
