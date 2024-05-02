@@ -5,8 +5,8 @@ import SocialProofSection from "./components/social-proof-section";
 function App() {
   return (
     <>
-      <HeroSection />
-      <SocialProofSection />
+      {/* <HeroSection /> */}
+      {/* <SocialProofSection /> */}
       <FeaturesSection />
     </>
   );
