@@ -11,42 +11,58 @@ export default function HeroSection() {
 
   return (
     <>
-      <div className="flex flex-col px-4 py-16">
-        <div
-          id="newFeatureButtonContainer"
-          className="mx-auto mb-4 text-xs font-medium text-primary transition-transform hover:translate-x-2"
-        >
-          <a href="#" target="_blank">
-            <div
-              id="newFeatureButton"
-              className="flex items-center gap-3 rounded-full bg-primary/5 p-1"
-            >
-              <div
-                id="newFeatureButtonBadge"
-                className="rounded-full border border-primary/20 bg-white px-2 py-1"
-              >
-                <h4>New feature</h4>
+      {/* Section */}
+      <div className="grid gap-16 py-16">
+        {/* Container */}
+        <div className="px-4">
+          {/* Content */}
+          <div className="grid gap-8">
+            {/* Heading and supporting text */}
+            <div className="grid gap-4">
+              {/* Heading and badge */}
+              <div className="grid gap-4">
+                {/* Badge group */}
+                <div className="mx-auto text-xs font-medium text-primary transition-transform hover:translate-x-2">
+                  <a href="#" target="_blank">
+                    {/* Button */}
+                    <div className="flex items-center gap-3 rounded-full bg-primary/5 p-1">
+                      {/* Badge */}
+                      <div className="rounded-full border border-primary/20 bg-white px-2 py-1">
+                        <p>New feature</p>
+                      </div>
+                      <p>Check our the team dashboard</p>
+                      <ArrowRight className="text-primary/50" />
+                    </div>
+                  </a>
+                </div>
+                {/* Heading */}
+                <h1 className="text-center text-4xl font-semibold leading-10">
+                  {headlineUUI}
+                </h1>
               </div>
-              <h4>Check our the team dashboard</h4>
-              <ArrowRight className="text-primary/50" />
+              {/* Supporting text */}
+              <p className="text-center text-lg text-gray-600">
+                {subheadlineUUI}
+              </p>
             </div>
-          </a>
+            {/* Actions */}
+            <div className="grid gap-3">
+              <Button>Sign up</Button>
+              <Button className="gap-2" variant="outline">
+                <CirclePlay className="h-4 w-4" />
+                Demo
+              </Button>
+            </div>
+          </div>
         </div>
-        <h1 className="mb-4 text-center text-4xl font-semibold leading-10">
-          {headlineUUI}
-        </h1>
-        <h2 className="mb-8 text-center text-lg text-gray-600">
-          {subheadlineUUI}
-        </h2>
-        <div className="mb-16 flex flex-col gap-3">
-          <Button>Sign up</Button>
 
-          <Button className="gap-2" variant="outline">
-            <CirclePlay className="h-4 w-4" />
-            Demo
-          </Button>
+        {/* Container */}
+        <div className="px-4">
+          {/* Content */}
+          <div>
+            <img src="./macbook.svg" alt="macbook image" />
+          </div>
         </div>
-        <img src="./macbook.svg" alt="macbook image" />
       </div>
     </>
   );
