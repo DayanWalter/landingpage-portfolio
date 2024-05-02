@@ -14,17 +14,13 @@ export default function SocialProofSection() {
         <h3 className="mb-8 text-center font-medium leading-6 text-gray-600">
           Join 4,000+ companies already growing
         </h3>
-        <div className="grid grid-cols-2 grid-rows-3 items-center justify-items-center gap-4">
+        <ul className="grid grid-cols-2 grid-rows-3 items-center justify-items-center gap-4">
           {companies.map((name) => (
-            <>
-              <img
-                key={name}
-                src={`./src/assets/companies/${name}.svg`}
-                alt={`${name} logo`}
-              />
-            </>
+            <li key={name}>
+              <img src={`./companies/${name}.svg`} alt={`${name} logo`} />
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </>
   );
