@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <HeroSection />
-      {/* <SocialProofSection /> */}
+      <SocialProofSection />
     </>
   );
 }
