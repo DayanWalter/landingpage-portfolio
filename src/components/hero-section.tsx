@@ -12,9 +12,9 @@ export default function HeroSection() {
   return (
     <>
       {/* Section */}
-      <div className="grid gap-16 py-16 md:py-24">
+      <div className="grid justify-center gap-16 py-16 md:py-24">
         {/* Container */}
-        <div className="px-4 md:px-8">
+        <div className="px-4 md:max-w-7xl md:px-8">
           {/* Content */}
           <div className="grid gap-8 md:gap-12">
             {/* Heading and supporting text */}
@@ -58,9 +58,9 @@ export default function HeroSection() {
         </div>
 
         {/* Container */}
-        <div className="px-4">
+        <div className="px-4 md:max-w-7xl md:px-8">
           {/* Content */}
-          <div>
+          <div className="overflow-hidden md:max-h-[480px]">
             <img src="./macbook.svg" alt="macbook image" />
           </div>
         </div>
