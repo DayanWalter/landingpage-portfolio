@@ -10,14 +10,15 @@ import Divider from "./components/ui/divider";
 function App() {
   return (
     <>
-      {/* <HeroSection /> */}
-      {/* <SocialProofSection /> */}
-      {/* <Divider /> */}
-      {/* <FeaturesSection /> */}
-      {/* <QuoteSection /> */}
-      {/* <MetricsSection /> */}
+      <HeroSection />
+      <SocialProofSection />
+      <Divider />
+      <FeaturesSection />
+      <QuoteSection />
       <FaqSection />
-      {/* <CtaSection /> */}
+      <Divider />
+      <MetricsSection />
+      <CtaSection />
     </>
   );
 }

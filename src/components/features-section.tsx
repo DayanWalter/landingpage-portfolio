@@ -1,40 +1,41 @@
 import React from "react";
+import Icon from "./ui/icon";
 
 export default function FeaturesSection() {
   // Edit features as necessary
   const features = [
     {
-      icon: "mail",
+      icon: "Mail",
       text: "Share team inboxes",
       supportingText:
         "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.",
     },
     {
-      icon: "bar-chart",
+      icon: "BarChart2",
       text: "Deliver instant answers",
       supportingText:
         "An all-in-one customer service platform that helps you balance everything your customers need to be happy.",
     },
     {
-      icon: "zap",
+      icon: "Zap",
       text: "Manage your team with reports",
       supportingText:
         "Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.",
     },
     {
-      icon: "smile",
+      icon: "Smile",
       text: "Connect with customers",
       supportingText:
         "Solve a problem or close a sale in real-time with chat. If no one is available, customers are seamlessly routed to email without confusion.",
     },
     {
-      icon: "command",
+      icon: "Command",
       text: "Connect the tools you already use",
       supportingText:
         "Explore 100+ integrations that make your day-to-day workflow more efficient and familiar. Plus, our extensive developer tools.",
     },
     {
-      icon: "message-circle",
+      icon: "MessageCircle",
       text: "Our people make the difference",
       supportingText:
         "We're an extension of your customer service team, and all of our resources are free. Chat to our friendly team 24/7 when you need help.",
@@ -81,10 +82,16 @@ export default function FeaturesSection() {
                 className="grid justify-items-center gap-4"
               >
                 {/* Feature icon */}
-                <img
+                <div className="grid h-10 w-10 items-center justify-center rounded-full bg-primary/5">
+                  <div className="grid h-7 w-7 items-center justify-center rounded-full bg-primary/10">
+                    <Icon icon={`${feature.icon}`} />
+                  </div>
+                </div>
+
+                {/* <img
                   src={`./features/${feature.icon}.svg`}
                   alt={`${feature.icon} icon`}
-                />
+                /> */}
                 {/* Text and supporting text */}
                 <div className="grid gap-1">
                   <p className="text-center text-lg font-medium">
