@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Button } from "./ui/button";
 
 export default function FaqSection() {
   return (
@@ -85,7 +86,29 @@ export default function FaqSection() {
           </Accordion>
         </div>
         {/* Container */}
-        <div className="px-4"></div>
+        <div className="px-4">
+          {/* Content */}
+          <div className="grid justify-items-center gap-6 rounded-md bg-gray-50 px-5 py-8">
+            {/* Avatar group */}
+            <div>
+              <img src="./faq/avatargroup.svg" alt="" />
+            </div>
+            {/* Heading and supporting text */}
+            <div className="grid gap-2 text-center">
+              <p className="text-xl font-medium text-gray-900">
+                Still have questions?
+              </p>
+              <p className="text-gray-600">
+                Can't find the answer you're looking for? Please chat to our
+                friendly team.
+              </p>
+            </div>
+            {/* Actions */}
+            <div>
+              <Button className="font-semibold">Get in touch</Button>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
