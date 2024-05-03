@@ -1,3 +1,4 @@
+import CtaSection from "./components/cta-section";
 import FeaturesSection from "./components/features-section";
 import HeroSection from "./components/hero-section";
 import MetricsSection from "./components/metrics-section";
@@ -13,7 +14,8 @@ function App() {
       {/* <Divider /> */}
       {/* <FeaturesSection /> */}
       {/* <QuoteSection /> */}
-      <MetricsSection />
+      {/* <MetricsSection /> */}
+      <CtaSection />
     </>
   );
 }
