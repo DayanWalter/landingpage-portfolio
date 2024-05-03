@@ -1,4 +1,5 @@
 import CtaSection from "./components/cta-section";
+import FaqSection from "./components/faq-section";
 import FeaturesSection from "./components/features-section";
 import HeroSection from "./components/hero-section";
 import MetricsSection from "./components/metrics-section";
@@ -15,7 +16,8 @@ function App() {
       {/* <FeaturesSection /> */}
       {/* <QuoteSection /> */}
       {/* <MetricsSection /> */}
-      <CtaSection />
+      <FaqSection />
+      {/* <CtaSection /> */}
     </>
   );
 }
