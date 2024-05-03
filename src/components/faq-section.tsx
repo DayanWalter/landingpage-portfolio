@@ -1,4 +1,10 @@
 import React from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function FaqSection() {
   return (
@@ -20,7 +26,64 @@ export default function FaqSection() {
           </div>
         </div>
         {/* Container */}
-        <div className="px-4"></div>
+        <div className="px-4">
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>
+                Is there a free trial available?
+              </AccordionTrigger>
+              <AccordionContent>
+                Yes, you can try us for free for 30 days. If you want, we’ll
+                provide you with a free, personalized 30-minute onboarding call
+                to get you up and running as soon as possible.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger>Can I change my plan later?</AccordionTrigger>
+              <AccordionContent>
+                Yes, you can change your plan anytime. Simply go to your account
+                settings and select the new plan that better suits your needs.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>
+                What is your cancellation policy?
+              </AccordionTrigger>
+              <AccordionContent>
+                Our cancellation policy is flexible. You can cancel your
+                subscription anytime without contractual obligations. There are
+                no cancellation fees.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger>
+                Can other info be added to an invoice?
+              </AccordionTrigger>
+              <AccordionContent>
+                Yes, you can add additional information to the invoice, such as
+                a purchase order number or special instructions for accounting.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger>How does billing work?</AccordionTrigger>
+              <AccordionContent>
+                Billing occurs automatically at the end of each billing cycle
+                based on your selected plan and the number of active users.
+                You'll receive a detailed invoice via email.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <AccordionTrigger>
+                How do I change my account email?
+              </AccordionTrigger>
+              <AccordionContent>
+                You can change your account email in the account settings.
+                Simply select the "Change Email" option and follow the
+                instructions to input and confirm your new email address.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
         {/* Container */}
         <div className="px-4"></div>
       </div>
