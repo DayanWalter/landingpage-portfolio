@@ -12,13 +12,13 @@ export default function HeroSection() {
   return (
     <>
       {/* Section */}
-      <div className="grid gap-16 py-16">
+      <div className="grid gap-16 py-16 md:py-24">
         {/* Container */}
-        <div className="px-4">
+        <div className="px-4 md:px-8">
           {/* Content */}
-          <div className="grid gap-8">
+          <div className="grid gap-8 md:gap-12">
             {/* Heading and supporting text */}
-            <div className="grid gap-4">
+            <div className="grid items-center justify-items-center gap-4 md:gap-6">
               {/* Heading and badge */}
               <div className="grid gap-4">
                 {/* Badge group */}
@@ -35,18 +35,19 @@ export default function HeroSection() {
                     </div>
                   </a>
                 </div>
+
                 {/* Heading */}
-                <h1 className="text-center text-4xl font-semibold leading-10">
+                <h1 className="text-center text-4xl font-semibold leading-10 md:text-6xl">
                   {headlineUUI}
                 </h1>
               </div>
               {/* Supporting text */}
-              <p className="text-center text-lg text-gray-600">
+              <p className="text-center text-lg text-gray-600 md:max-w-3xl md:text-xl">
                 {subheadlineUUI}
               </p>
             </div>
             {/* Actions */}
-            <div className="grid gap-3">
+            <div className="flex flex-col gap-3 md:flex-row md:justify-center">
               <Button>Sign up</Button>
               <Button className="gap-2" variant="outline">
                 <CirclePlay className="h-4 w-4" />
