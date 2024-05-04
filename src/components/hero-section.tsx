@@ -12,7 +12,7 @@ export default function HeroSection() {
   return (
     <>
       {/* Section */}
-      <div className="grid justify-center gap-16 py-16 md:py-24">
+      <div className="grid justify-center gap-16 py-16 md:pb-0 md:pt-24">
         {/* Container */}
         <div className="px-4 md:max-w-7xl md:px-8">
           {/* Content */}
