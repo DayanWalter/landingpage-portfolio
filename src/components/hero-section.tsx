@@ -1,3 +1,4 @@
+import { ModeToggle } from "./mode-toggle";
 import { Button } from "./ui/button";
 import { ArrowRight, CirclePlay } from "lucide-react";
 
@@ -22,11 +23,9 @@ export default function HeroSection() {
               {/* Heading and badge */}
               <div className="grid gap-4">
                 {/* Badge group */}
-                <div className="mx-auto text-xs font-medium text-primary transition-transform hover:translate-x-2">
+                {/* <div className="mx-auto text-xs font-medium text-primary transition-transform hover:translate-x-2">
                   <a href="#" target="_blank">
-                    {/* Button */}
                     <div className="flex items-center gap-3 rounded-full bg-primary/5 p-1">
-                      {/* Badge */}
                       <div className="rounded-full border border-primary/20 bg-white px-2 py-1">
                         <p>New feature</p>
                       </div>
@@ -34,7 +33,7 @@ export default function HeroSection() {
                       <ArrowRight className="text-primary/50" />
                     </div>
                   </a>
-                </div>
+                </div> */}
 
                 {/* Heading */}
                 <h1 className="text-center text-4xl font-semibold leading-10 md:text-6xl">
