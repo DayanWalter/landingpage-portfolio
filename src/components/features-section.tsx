@@ -43,26 +43,27 @@ export default function FeaturesSection() {
 
   return (
     <>
-      <div className="grid gap-12 py-16">
+      {/* Section */}
+      <div className="grid justify-center gap-12 py-16 md:gap-16 md:py-24">
         {/* Container */}
-        <div className="px-4">
+        <div className="px-4 md:max-w-7xl md:px-8">
           {/* Content */}
           <div>
             {/* Heading and supporting text */}
-            <div className="grid gap-4">
+            <div className="grid gap-4 md:gap-5">
               {/* Heading and Subheading */}
               <div className="grid gap-3">
                 {/* Subheading */}
-                <p className="text-center text-sm font-semibold text-primary/70">
+                <p className="text-center text-sm font-semibold text-primary/70 md:text-base">
                   Features
                 </p>
                 {/* Heading */}
-                <h2 className="text-center text-3xl font-semibold">
+                <h2 className="text-center text-3xl font-semibold  md:text-4xl">
                   Analytics that feels like it's from the future
                 </h2>
               </div>
               {/* Supporting Text */}
-              <p className="text-center text-lg text-gray-600 ">
+              <p className="text-center text-lg text-gray-600 md:text-xl ">
                 Powerful, self-serve product and growth analytics to help you
                 convert, engage, and retain more users. Trusted by over 4,000
                 startups.
@@ -71,18 +72,18 @@ export default function FeaturesSection() {
           </div>
         </div>
         {/* Container */}
-        <div className="px-4">
+        <div className="px-4 md:max-w-7xl md:px-8">
           {/* Content */}
-          <ul className="grid gap-10">
+          <ul className="grid gap-10 md:grid-cols-3 md:grid-rows-2 md:gap-x-8 md:gap-y-16">
             {features.map((feature) => (
               // Feature
               <li
                 key={feature.icon}
-                className="grid justify-items-center gap-4"
+                className="grid justify-items-center gap-4 md:gap-5"
               >
                 {/* Feature icon */}
-                <div className="grid h-10 w-10 items-center justify-center rounded-full bg-primary/5">
-                  <div className="grid h-7 w-7 items-center justify-center rounded-full bg-primary/10">
+                <div className="grid h-10 w-10 items-center justify-center rounded-full bg-primary/5 md:h-12 md:w-12">
+                  <div className="grid h-7 w-7 items-center justify-center rounded-full bg-primary/10 md:h-9 md:w-9">
                     <Icon icon={`${feature.icon}`} />
                   </div>
                 </div>
@@ -92,8 +93,8 @@ export default function FeaturesSection() {
                   alt={`${feature.icon} icon`}
                 /> */}
                 {/* Text and supporting text */}
-                <div className="grid gap-1">
-                  <p className="text-center text-lg font-medium">
+                <div className="grid gap-1 md:gap-2">
+                  <p className="text-center text-lg font-medium md:text-xl">
                     {feature.text}
                   </p>
                   <p className="text-center text-gray-600">

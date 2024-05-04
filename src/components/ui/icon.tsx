@@ -9,7 +9,7 @@ import {
 
 export default function Icon({ icon }: { icon: string }) {
   // Change classes here, if necessary
-  const classNames = "h-5 w-5 text-primary/60";
+  const classNames = "h-5 w-5 text-primary/60 md:w-6 md:h-6";
 
   // Add icons
   if (icon === "Mail") return <Mail className={classNames} />;
