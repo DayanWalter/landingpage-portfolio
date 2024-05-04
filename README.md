@@ -1,4 +1,20 @@
-# Vite + React + TypeScript + Tailwind + shadcn
+# Landingpage Frontend Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple frontend project.
 
+## About the project
+
+This Landingpage is fully responsive and the color theme can be changed (in development).
+The design is from [UntitledUI](https://www.untitledui.com/) and some components are from [Shadcn/ui](https://ui.shadcn.com/).
+
+### Technologies used
+
+- [Vite.js](https://vitejs.dev)
+- [React.js](https://react.dev/)
+- [TypeScript](https://typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Shadcn](https://ui.shadcn.com/)
+
+### In development
+
+- User can change themes
