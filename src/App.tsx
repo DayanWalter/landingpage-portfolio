@@ -14,11 +14,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 function App() {
   return (
     <>
-      <ThemeProvider
-        defaultTheme="dark"
-        storageKey="vite-ui-theme"
-        themes={["orange", "light", "dark"]}
-      >
+      <ThemeProvider defaultTheme="orange" storageKey="vite-ui-theme">
         <ModeToggle />
         <HeroSection />
         <DesktopDivider />
