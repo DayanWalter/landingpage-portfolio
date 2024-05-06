@@ -10,7 +10,7 @@ import {
 import { useTheme } from "@/components/theme-provider";
 
 export function ModeToggle() {
-  const { setTheme, theme } = useTheme();
+  const { setTheme } = useTheme();
 
   return (
     <div className="absolute right-6 top-5">
