@@ -4,7 +4,7 @@ This is a simple frontend project.
 
 ## About the project
 
-This Landingpage is fully responsive and the color theme can be changed (in development).
+This Landingpage is fully responsive and the color theme can be changed.
 The design is from [UntitledUI](https://www.untitledui.com/) and some components are from [Shadcn/ui](https://ui.shadcn.com/).
 
 ### Technologies used
@@ -14,7 +14,3 @@ The design is from [UntitledUI](https://www.untitledui.com/) and some components
 - [TypeScript](https://typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Shadcn](https://ui.shadcn.com/)
-
-### In development
-
-- User can change themes
