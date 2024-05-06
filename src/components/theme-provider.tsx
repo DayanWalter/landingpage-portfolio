@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-type Theme = "orange" | "green";
+type Theme = "orange" | "green" | "red" | "violet" | "yellow";
 
 type ThemeProviderProps = {
   children: React.ReactNode;
@@ -22,7 +22,7 @@ const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 
 export function ThemeProvider({
   children,
-  defaultTheme = "orange",
+  defaultTheme = "violet",
   storageKey = "vite-ui-theme",
   ...props
 }: ThemeProviderProps) {
@@ -33,7 +33,7 @@ export function ThemeProvider({
   useEffect(() => {
     const root = window.document.documentElement;
 
-    root.classList.remove("orange", "green");
+    root.classList.remove("orange", "green", "red", "violet", "yellow");
 
     root.classList.add(theme);
   }, [theme]);
