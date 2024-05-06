@@ -1,4 +1,3 @@
-import { ModeToggle } from "./mode-toggle";
 import { Button } from "./ui/button";
 import { ArrowRight, CirclePlay } from "lucide-react";
 
